@@ -163,6 +163,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%;
   width: 100%;
   height: 70px;
   z-index: 20;
@@ -217,14 +218,17 @@
   position: relative;
 }
 
-.header-form__btn {
+.header-form__icon {
   position: absolute;
   left: -32px;
   top: 5px;
+}
+
+/* .header-form__btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
+} */
 
 .header-form__input {
   width: 220px;

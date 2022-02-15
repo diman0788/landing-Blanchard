@@ -1,96 +1,99 @@
 /* section-hero */
 
 .section-hero {
-    position: relative;
-    min-height: 700px;
+  position: relative;
+  min-height: 700px;
 }
 
 .section-hero__container {
-    position: absolute;
-    top: 0;
-    left: 160px;
-    z-index: 10;
-    max-width: 100%;
-    padding: 98px 0 122px;
+  position: absolute;
+  top: 0;
+  left: 160px;
+  z-index: 10;
+  max-width: 100%;
+  padding: 98px 0 122px;
 }
 
 .section-hero__heading {
-    max-width: 34%;
-    margin-bottom: 15px;
-    font-size: 72px;
-    line-height: 82.8px;
-    font-weight: 700;
-    color: #ffffff;
+  max-width: 34%;
+  margin-bottom: 15px;
+  font-size: 72px;
+  line-height: 82.8px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .section-hero__discription {
-    max-width: 45%;
-    padding-bottom: 92px;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #ffffff;
+  max-width: 45%;
+  padding-bottom: 92px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .section-hero__btn {
-    background-color: #9D5CD0;
+display: inline-block;
+max-width: 314px;
+width: 100%;
+background-color: #9D5CD0;
 }
 
 #crossfade {
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 700px;
-    background-image: url('../img/hero/hero-icon1x1920.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 700px;
+  background-image: url('../img/hero/hero-icon1x1920.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .section-hero__icon1 {
-    background: url('../img/hero/hero-icon1x1920.png') center center no-repeat transparent;
-    background-size: 100% 100%;
+  background: url('../img/hero/hero-icon1x1920.png') center center no-repeat transparent;
+  background-size: 100% 100%;
 }
 
 .section-hero__icon2 {
-    background: url('../img/hero/hero-icon2x1920.png') center center no-repeat transparent;
-    background-size: 100% 100%;
+  background: url('../img/hero/hero-icon2x1920.png') center center no-repeat transparent;
+  background-size: 100% 100%;
 }
 
 .section-hero__icon3 {
-    background: url('../img/hero/hero-icon3x1920.png') center center no-repeat transparent;
-    background-size: 100% 100%;
+  background: url('../img/hero/hero-icon3x1920.png') center center no-repeat transparent;
+  background-size: 100% 100%;
 }
 
 #crossfade span {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    opacity: 0;
-    transform: scale(1.4);
-    animation: crossfade 24s infinite;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  opacity: 0;
+  transform: scale(1.4);
+  animation: crossfade 24s infinite;
 }
 
 #crossfade span:nth-child(3) {
-    animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 #crossfade span:nth-child(2) {
-    animation-delay: 12s;
+  animation-delay: 12s;
 }
 
 #crossfade span:nth-child(1) {
-    animation-delay: 18s;
+  animation-delay: 18s;
 }
 
 @keyframes crossfade {
-    25% {
-        opacity: 1;
-        transform: scale(1.2)
-    }
-    40% {
-        opacity: 0;
-    }
+  25% {
+    opacity: 1;
+    transform: scale(1.2)
+  }
+  40% {
+    opacity: 0;
+  }
 }
