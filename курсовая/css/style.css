@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_bold-webfont.woff2') format('woff2'), url('../fonts/open_sans_bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_regilar-webfont.woff2') format('woff2'), url('../fonts/open_sans_regilar-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_semibold-webfont.woff2') format('woff2'), url('../fonts/open_sans_semibold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_italic-webfont.woff2') format('woff2'), url('../fonts/open_sans_italic-webfont.woff') format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
+
+:root {
+  --white: #ffffff;
+  --white--rgb: 255, 255, 255;
+  --black: #000000;
+  --black--rgb: 0, 0, 0;
+  --verydarkgray: #666666;
+  --gray90: #e5e5e5;
+  --gray60: #999999;
+  --gray20: #333333;
+  --lightgray: #cacaca;
+  --lightlightgray: #c4c4c4;
+  --verylightgray: #ececec;
+  --moderateviolet: #9d5cd0;
+  --moderateviolet--rgb: 157, 92, 208;
+  --darkmoderateviolet: #7943a4;
+  --verysoftviolet: #d1a9f0;
+  --softviolet: #c283f3;
+  --softviolet--rgb: 194, 131, 243;
+}
+
+html {
+  font-family: 'Open-Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 65.37px;
+  color: var(--gray20);
+  font-weight: 400;
+}
+
+.btn {
+  max-width: 314px;
+  height: 70px;
+  padding: 22px 35px;
+  font-size: 18px;
+  line-height: 24.51px;
+  font-weight: 700;
+  color: var(--white);
+  border: 1px solid var(--moderateviolet);
+  border-radius: 100px;
+  cursor: pointer;
+}

@@ -1,0 +1,232 @@
+.section-catalog {
+  padding: 80px 0;
+}
+
+.section-catalog__heading {
+  margin-bottom: 14px;
+}
+
+.section-catalog__discription {
+  max-width: 1020px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--gray20);
+  font-weight: 400;
+}
+
+.catalog-tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-content {
+  max-width: 48%;
+}
+
+.tabs-content__picture {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.tabs-content__heading {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--gray20);
+  font-weight: 600;
+}
+
+.tabs-content__years-of-life {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 16.34px;
+  color: var(--gray60);
+  font-weight: 400;
+}
+
+.tabs-content__discription {
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 2;
+  color: var(--gray20);
+  font-weight: 400;
+}
+
+.tabs-accordion {
+  width: 50%;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.accordion-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -1px;
+  padding: 40px 0;
+  border-top: .5px solid var(--lightgray);
+  border-bottom: .5px solid var(--lightgray);
+  transition: border-top-color .3s ease-in-out;
+}
+
+.accordion-list__heading {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--gray20);
+}
+
+.accordion-list__icon svg path {
+  transition: fill .3s ease-in-out;
+}
+
+.accordion-selector {
+  width: 100%;
+  display: flex;
+}
+
+.accordion-selector__content {
+  max-width: 196px;
+}
+
+.content-1 {
+  margin-right: 60px;
+}
+
+.content-2 {
+  margin-right: 43px;
+}
+
+.accordion-selector__btn {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 400;
+  color: var(--gray20);
+  text-align: left;
+  cursor: pointer;
+  transition-property: color, background-color, border-bottom;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-size: 16px;
+  font-family:  'Open-Sans', sans-serif;
+}
+
+.ui-icon {
+  display: none;
+}
+
+.ui-accordion .ui-accordion-header {
+  display: flex;
+  padding: 30px 0;
+}
+
+.ui-state-default {
+  position: relative;
+  margin-bottom: -1px;
+  border-radius: 0;
+  border: none;
+  border-top: .5px solid var(--lightgray);
+  border-bottom: .5px solid var(--lightgray);
+  background-color: transparent;
+}
+
+.ui-state-active {
+  border: none;
+  border-top: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--lightgray);
+  background-color: transparent;
+}
+
+.ui-widget-content {
+  border: none;
+  padding: 0;
+}
+
+.ui-accordion .ui-accordion-header {
+  position: static;
+  padding: 29.5px 0;
+  margin: 0;
+}
+
+.ui-state-active {
+  border-top-color: var(--moderateviolet);
+  border-bottom-color: var(--moderateviolet);
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 25px 0;
+}
+
+.ui-state-active .accordion-list__heading {
+  color: var(--moderateviolet);
+}
+
+.ui-state-active svg path {
+  stroke: var(--moderateviolet);
+  fill: var(--verysoftviolet);
+}
+
+.ui-state-active svg {
+  transform: rotate( 180deg);
+}
+
+.accordion-list .accordion-list__heading {
+  transition: color .3s ease-in-out;
+}
+
+.ui-state-default:hover {
+  z-index: 100;
+  border-top-color: var(--moderateviolet);
+  border-bottom-color: var(--moderateviolet);
+}
+
+.accordion-list:hover .accordion-list__heading {
+  color: var(--moderateviolet);
+}
+
+.accordion-list:hover svg path {
+  fill: var(--verysoftviolet);
+}
+
+.accordion-list:hover {
+  border-top-color: var(--moderateviolet);
+}
+
+.accordion-list:focus {
+  outline: none;
+}
+
+.accordion-list:focus .accordion-list__heading {
+  outline: none;
+  color: var(--white);
+  background-color: var(--moderateviolet);
+}
+
+.accordion-list__icon:focus {
+  outline: none;
+}
+
+.accordion-list__icon:focus svg path {
+  fill: var(--verysoftviolet);
+}
+
+.accordion-list:focus svg path {
+  fill: var(--verysoftviolet);
+}
+
+.accordion-selector__btn:hover {
+  color: var(--moderateviolet);
+  border-bottom: 1px solid var(--moderateviolet);
+}
+
+.accordion-selector__btn:focus {
+  color: var(--white);
+  background-color: var(--moderateviolet);
+}

@@ -1,0 +1,21 @@
+/* footer */
+
+.footer {
+    height: 140px;
+    background-color: #000000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.social-llist {
+    display: flex;
+}
+
+.social-list__item:not(:last-child) {
+    margin-right: 20px;
+}
