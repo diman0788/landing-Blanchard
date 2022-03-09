@@ -1,3 +1,23 @@
+// burger
+
+document.querySelector('#burger').addEventListener('click', function () {
+  document.querySelector('#menu').classList.toggle('is-active')
+  document.body.classList.toggle('overflow')
+  document.querySelector('.header-left__btn').classList.toggle('open')
+  document.querySelectorAll('.header-nav-list__item').forEach(function (e) {
+   e.addEventListener('click', function() {
+     document.querySelector('#menu').classList.remove('is-active')
+     document.body.classList.remove('overflow')
+     document.querySelector('.header-left__btn').classList.remove('open')
+   })
+   document.querySelector('.header-nav__btn').addEventListener('click', function() {
+    document.querySelector('#menu').classList.remove('is-active')
+    document.body.classList.remove('overflow')
+    document.querySelector('.header-left__btn').classList.remove('open')
+  })
+  })
+})
+
 // плавный скрол
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
@@ -68,35 +88,33 @@ const galSwiper = new Swiper('.gallery-right-swiper-container', {
     slidesPerGroup: 1,
     centeredSlides: false,
     initialSlide: 1,
-    slidesPerColumn: 2,
 
     breakpoints: {
-        300: {
-            slidesPerView: 1,
-            autoHeight: false,
-            watchOverflow: true,
-            slidesPerGroup: 1,
-            centeredSlides: true,
-            initialSlide: 0,
-            slidesPerColumn: 1,
-        },
-        500: {
+        480: {
             slidesPerView: 2,
-            watchOverflow: true,
-            spaceBetween: 34,
             slidesPerGroup: 2,
-            initialSlide: 0,
-            slidesPerColumn: 1,
+            spaceBetween: 14
         },
-        1171: {
+        750: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 34
+        },
+        769: {
             slidesPerView: 3,
-            watchOverflow: true,
-            spaceBetween: 50,
             slidesPerGroup: 3,
-            centeredSlides: false,
-            initialSlide: 0,
-            slidesPerColumn: 1,
+            spaceBetween: 34
         },
+        1050: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 34
+        },
+        1480: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 50
+        }
     },
 });
 
@@ -297,56 +315,49 @@ $( function() {
 // events
 
 const eventSwiper = new Swiper('.section-events-swiper-container', {
-  // pagination: {
-  //     el: '.events-list-swiper-button__pagination',
-  //     type: 'bullets',
-  //     simulateTouch: true,
-  //     touchRatio: 1,
-  //     touchAngle: 45,
-  //     grabCursor: true,
-  // },
-  navigation: {
-      nextEl: '.events-list-swiper-button__next',
-      prevEl: '.events-list-swiper-button__prev',
+  pagination: {
+      el: '.section-events__pagination',
+      type: 'bullets',
+      clickable: true,
+      simulateTouch: true,
   },
-  slidesPerView: 1,
-  watchOverflow: true,
-  slidesPerGroup: 1,
-  centeredSlides: false,
-  initialSlide: 1,
-  slidesPerColumn: 1,
+  navigation: {
+      nextEl: '.section-events__button-next',
+      },
+
+      loop: true,
+      slidesPerView: 1,
+      watchOverflow: false,
+      slidesPerGroup: 1,
+      centeredSlides: false,
+      initialSlide: 0,
 
   breakpoints: {
-      300: {
-          slidesPerView: 1,
-          autoHeight: false,
-          watchOverflow: true,
-          slidesPerGroup: 1,
-          centeredSlides: true,
-          initialSlide: 12,
-          slidesPerColumn: 1,
-      },
-      500: {
-          slidesPerView: 2,
-          watchOverflow: true,
-          spaceBetween: 34,
-          slidesPerGroup: 2,
-          initialSlide: 7,
-          slidesPerColumn: 2,
-          pagination: {
-            el: '.events-list-swiper-button__pagination',
-            type: 'bullets',
+          480: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 14
           },
-      },
-      1171: {
-          slidesPerView: 3,
-          watchOverflow: true,
-          spaceBetween: 50,
-          slidesPerGroup: 3,
-          centeredSlides: false,
-          initialSlide: 2,
-          slidesPerColumn: 1,
-      },
+          560: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 33,
+          },
+          869: {
+              slidesPerView: 2,
+              slidesPerGroup: 3,
+              spaceBetween: 34,
+          },
+          1014: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 24,
+          },
+          1480: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 50,
+          }
   },
 });
 
@@ -364,52 +375,109 @@ const projectsSwiper = new Swiper('.projects-bottom__partners', {
   slidesPerGroup: 1,
   centeredSlides: false,
   initialSlide: 1,
-  slidesPerColumn: 1,
 
   breakpoints: {
-      300: {
-          slidesPerView: 1,
-          autoHeight: false,
-          watchOverflow: true,
-          slidesPerGroup: 1,
-          centeredSlides: true,
-          initialSlide: 0,
-          slidesPerColumn: 1,
-      },
-      500: {
-          slidesPerView: 2,
-          watchOverflow: true,
-          spaceBetween: 34,
-          slidesPerGroup: 1,
-          initialSlide: 0,
-          slidesPerColumn: 1,
-      },
-      1171: {
-          slidesPerView: 3,
-          watchOverflow: true,
-          spaceBetween: 50,
-          slidesPerGroup: 1,
-          centeredSlides: false,
-          initialSlide: 0,
-          slidesPerColumn: 1,
-      },
+          480: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 14,
+          },
+          750: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 34,
+          },
+          769: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              spaceBetween: 34,
+          },
+          1014: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 44,
+          },
+          1480: {
+              slidesPerView: 3,
+              slidesPerGroup: 1,
+              spaceBetween: 50,
+          }
   },
 });
 
 // justValidate
 
-// new JustValidate('.contacts-form-wrapper', {
-//     rules: {
-//         name: {
-//             required: true,
-//             minLength: 2,
-//             maxLength: 30,
-//         },
-//         phone: {
-//             required: true,
-//             phone: true,
-//         },
-//     },
-// });
+var selector = document.querySelector("input[type='tel']");
+    var im = new Inputmask("+7(999)999-99-99");
+    im.mask(selector);
+
+new JustValidate('.contacts-form', {
+    rules: {
+      name: {
+        required: true,
+        minLength: 2,
+        maxLength: 15
+      },
+      tel: {
+        required: true,
+        function:(name, value) => {
+          const phone = selector.inputmask.unmaskedvalue()
+          return Number(phone) && phone.length === 10
+        }
+      },
+    },
+    messages: {
+      name: {
+        required: "Ваше имя.",
+        minLength: "Должно быть минимум 2 символа"
+      },
+      tel: {
+        required: "Ваш телефон.",
+        function: "Некорректный номер."
+      },
+    }
+});
 
 
+
+tippy('#tultip-1', {
+  content: 'Пример современных тенденций - современная методология разработки',
+  followCursor: true,
+  theme: 'tultip',
+});
+
+tippy('#tultip-2', {
+  content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+  followCursor: true,
+  theme: 'tultip',
+});
+
+tippy('#tultip-3', {
+  content: 'В стремлении повысить качество',
+  followCursor: true,
+  theme: 'tultip',
+});
+
+// tabs-catalog
+
+document.querySelectorAll('.accordion-selector__btn').forEach(function(tabsBtn) {
+  tabsBtn.addEventListener('click', function(event) {
+   const path = event.currentTarget.dataset.path_catalog
+
+    document.querySelectorAll('.tabs-content').forEach(function(tabsItem) {
+      tabsItem.classList.remove('tabs-active')
+    })
+    document.querySelector(`[data-target="${path}"]`).classList.add('tabs-active')
+  })
+})
+
+document.querySelectorAll('.accordion-selector__btn').forEach(function(tabsBtn) {
+  tabsBtn.addEventListener('click', function(event) {
+   const path = event.currentTarget.dataset.path_catalog
+
+    document.querySelectorAll('.accordion-selector__btn').forEach(function(tabsList) {
+      tabsList.classList.remove('tabs-active')
+    })
+    document.querySelector(`[data-path_catalog="${path}"]`).classList.add('tabs-active')
+  })
+})

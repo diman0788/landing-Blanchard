@@ -2,7 +2,7 @@
 
 .section-hero {
   position: relative;
-  min-height: 700px;
+  /* min-height: 700px; */
 }
 
 .section-hero__container {
@@ -11,11 +11,11 @@
   left: 160px;
   z-index: 10;
   max-width: 100%;
-  padding: 98px 0 122px;
+  padding: 145px 0 122px;
 }
 
 .section-hero__heading {
-  max-width: 34%;
+  max-width: 40%;
   margin-bottom: 15px;
   font-size: 72px;
   line-height: 82.8px;
@@ -25,25 +25,46 @@
 
 .section-hero__discription {
   max-width: 45%;
-  padding-bottom: 92px;
+  margin-bottom: 92px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .section-hero__btn {
 display: inline-block;
 max-width: 314px;
 width: 100%;
-background-color: #9D5CD0;
+background-color: var(--moderateviolet);
+transition-property: transform, border, outline, background-color;
+transition-duration: .3s;
+transition-timing-function: ease-in-out;
+}
+
+.section-hero__btn:hover {
+  border: 1px solid var(--verysoftviolet);
+  transform: scale(1.05);
+}
+
+.section-hero__btn:focus {
+  border: 2px solid var(--white);
+  outline: 1px solid var(--softviolet);
+}
+
+.section-hero__btn:active {
+  background-color: var(--darkmoderateviolet);
+  border: 1px solid var(--verysoftviolet);
+  transform: scale(.9);
 }
 
 #crossfade {
   position: relative;
   display: flex;
   align-items: center;
+  max-width: 1920px;
   min-height: 700px;
+  margin: 0 auto;
   background-image: url('../img/hero/hero-icon1x1920.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -96,4 +117,120 @@ background-color: #9D5CD0;
   40% {
     opacity: 0;
   }
+}
+
+@media (max-width: 1200px) {
+
+  #crossfade {
+    min-height: 667px;
+  }
+
+  .section-hero__container  {
+    left: 0;
+    padding: 117px 50px;
+  }
+
+  .section-hero__icon1 {
+    background: url('../img/hero/hero-icon1x1024.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__icon2 {
+    background: url('../img/hero/hero-icon2x1024.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__icon3 {
+    background: url('../img/hero/hero-icon3x1024.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__heading {
+    margin-bottom: 10px;
+  }
+
+  .section-hero__discription {
+    max-width: 76%;
+    margin-bottom: 130px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  #crossfade {
+    min-height: 668px;
+  }
+
+  .section-hero__discription {
+    max-width: 100%;
+  }
+
+  .section-hero__icon1 {
+    background: url('../img/hero/hero-icon1x768.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__icon2 {
+    background: url('../img/hero/hero-icon2x768.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__icon3 {
+    background: url('../img/hero/hero-icon3x768.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  #crossfade {
+    min-height: 310px;
+  }
+
+  .section-hero__container {
+    padding: 30px 30px;
+  }
+
+  .section-hero__icon1 {
+    background: url('../img/hero/hero-icon1x320.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__icon2 {
+    background: url('../img/hero/hero-icon2x320.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__icon3 {
+    background: url('../img/hero/hero-icon3x320.jpg') center center no-repeat transparent;
+    background-size: 100% 100%;
+  }
+
+  .section-hero__heading {
+    max-width: 100%;
+    margin: 2px;
+    font-size: 32px;
+    line-height: 43.58px;
+    text-align: center;
+  }
+
+  .section-hero__discription {
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .section-hero__btn {
+    margin-left: 30px;
+    max-width: 200px;
+    padding: 11px 16px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 16.34px;
+
+  }
+
 }

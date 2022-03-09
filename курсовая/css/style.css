@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -60,19 +58,34 @@ ul {
   list-style: none;
 }
 
-a {
+h1, h2, h3,
+h4, h5, h6,
+p, a, span, ul,
+button, input {
+  margin: 0;
+  padding: 0;
+}
+
+a, button, select, input, label {
   outline: none;
+}
+
+a {
   text-decoration: none;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 button {
   background-color: transparent;
   border: none;
-  outline: none;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .container {
@@ -83,6 +96,7 @@ button {
 }
 
 .heading {
+  margin: 0;
   font-size: 48px;
   line-height: 65.37px;
   color: var(--gray20);
@@ -100,4 +114,13 @@ button {
   border: 1px solid var(--moderateviolet);
   border-radius: 100px;
   cursor: pointer;
+}
+
+@media (max-width: 560px) {
+
+  .heading {
+    font-size: 28px;
+    line-height: 38.13px;
+  }
+
 }

@@ -12,10 +12,89 @@
     padding-top: 48px;
 }
 
-.social-llist {
+.social-list {
     display: flex;
 }
 
 .social-list__item:not(:last-child) {
     margin-right: 20px;
+}
+
+.social-list__link svg path {
+  transition: fill .3s ease-in-out;
+}
+
+.social-list__link:hover svg path,
+.social-list__link:focus svg path {
+  fill: var(--white);
+}
+
+.social-list__link:active svg path {
+  fill: var(--moderateviolet);
+}
+
+@media (max-width: 1200px) {
+
+  .footer-container {
+    padding-top: 38px;
+  }
+
+  .social-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+  .social-list__link svg {
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .footer-container {
+    padding-top: 41px;
+  }
+
+  .social-list__link svg {
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .footer {
+    height: 135px;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+    padding-top: 22px;
+    padding-bottom: 16px;
+    height: 132px;
+  }
+
+  .social-list__link svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-list {
+    margin-bottom: 14px;
+  }
+
+  .social-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .footer-left__link {
+    display: inline-block;
+    width: 97px;
+    height: 22px;
+    background: url('../img/header/Лого320.png') center center no-repeat transparent;
+    background-size: contain;
+  }
+
 }
