@@ -1,3 +1,12 @@
+// поиск
+
+document.querySelector('#serch').addEventListener('click', function () {
+  document.querySelector('#menu-serch').classList.add('menu-open')
+})
+document.querySelector('#close').addEventListener('click', function () {
+  document.querySelector('#menu-serch').classList.remove('menu-open')
+})
+
 // burger
 
 document.querySelector('#burger').addEventListener('click', function () {
