@@ -490,3 +490,24 @@ document.querySelectorAll('.accordion-selector__btn').forEach(function(tabsBtn) 
     document.querySelector(`[data-path_catalog="${path}"]`).classList.add('tabs-active')
   })
 })
+
+const tabsPainter = document.querySelectorAll('.accordion-selector__btn');
+const tabsItem = document.querySelectorAll('.tabs-content');
+
+tabsPainter.forEach(onTabsClick);
+
+function onTabsClick(item) {
+  item.addEventListener('click', () => {
+    const currentBtn = item;
+    const tabId = currentBtn.getAttribute('data-painter');
+    const currentTab = document.querySelector(tabId);
+
+
+      if (window.matchMedia('(max-width:815px)').matches) {
+        currentTab.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+  });
+}

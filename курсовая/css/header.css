@@ -155,7 +155,7 @@
   transition-timing-function: ease-in-out;
 }
 
-.header-nav_btn svg path {
+.header-nav__btn svg path {
   transition: fill .3s ease-in-out;
 }
 
