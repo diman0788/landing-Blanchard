@@ -642,7 +642,7 @@
   .header-right__menu {
     position: absolute;
     top: 0;
-    right: 50px;
+    right: 0;
     z-index: 300;
     display: flex;
     justify-content: space-between;
@@ -651,7 +651,7 @@
     height: 100px;
     background-color: var(--black);
     transition: transform .5s ease-in-out;
-    transform: translateX(150%);
+    transform: translateX(-101%);
   }
 
   .menu-open {
