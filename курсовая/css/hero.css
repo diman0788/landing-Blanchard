@@ -2,16 +2,12 @@
 
 .section-hero {
   position: relative;
-  /* min-height: 700px; */
 }
 
 .section-hero__container {
-  position: absolute;
-  top: 0;
-  left: 160px;
+  position: relative;
   z-index: 10;
-  max-width: 100%;
-  padding: 145px 0 122px;
+  width: 100%;
 }
 
 .section-hero__heading {
@@ -62,7 +58,6 @@ transition-timing-function: ease-in-out;
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 1920px;
   min-height: 700px;
   margin: 0 auto;
   background-image: url('../img/hero/hero-icon1x1920.png');
@@ -73,17 +68,17 @@ transition-timing-function: ease-in-out;
 
 .section-hero__icon1 {
   background: url('../img/hero/hero-icon1x1920.png') center center no-repeat transparent;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .section-hero__icon2 {
   background: url('../img/hero/hero-icon2x1920.png') center center no-repeat transparent;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .section-hero__icon3 {
   background: url('../img/hero/hero-icon3x1920.png') center center no-repeat transparent;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 #crossfade span {

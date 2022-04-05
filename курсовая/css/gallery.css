@@ -1,7 +1,6 @@
 /* gallery */
 
 .section-gallery {
-  max-width: 1920px;
   min-height: 495px;
   margin: 0 auto;
   padding: 80px 0 80px;
@@ -101,7 +100,7 @@
   border: 1px solid var(--softviolet);
 }
 
-.checke:checked ~ p  {
+.checke:checked ~ span  {
   color: var(--softviolet);
 }
 
@@ -143,8 +142,8 @@
   color: #ffffff;
 }
 
-.choices:hover,
-.choices:focus {
+.choices:focus,
+.choices:hover {
   background-color: rgba(var(--white--rgb), .2);
 }
 
