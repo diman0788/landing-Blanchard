@@ -1,5 +1,5 @@
 .section-catalog {
-  padding: 80px 0;
+  padding: 83px 0;
 }
 
 .section-catalog__heading {
@@ -8,7 +8,7 @@
 
 .section-catalog__discription {
   max-width: 1020px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   font-size: 16px;
   line-height: 2;
   color: var(--gray20);
@@ -89,7 +89,7 @@
 .accordion-selector {
   columns: 3;
   line-height: 32px;
-  column-gap: 37px;
+  column-gap: 30px;
 }
 
 .accordion-selector__btn {
@@ -148,7 +148,7 @@
 
 .ui-accordion .ui-accordion-header {
   position: static;
-  padding: 28.9px 0;
+  padding: 28.9px 0 28.8px;
   margin: 0;
 }
 
@@ -158,7 +158,7 @@
 }
 
 .ui-accordion .ui-accordion-content {
-  padding: 25px 100px 25px 0;
+  padding: 25px 75px 25px 0;
 }
 
 .ui-state-active .accordion-list__heading {
@@ -166,12 +166,19 @@
 }
 
 .ui-state-active svg path {
-  stroke: var(--moderateviolet);
   fill: var(--verysoftviolet);
 }
 
-.ui-state-active svg {
+.ui-state-active .stroke {
+  stroke: var(--moderateviolet);
+}
+
+.accordion-list svg {
   transform: rotate( 180deg);
+}
+
+.ui-state-active svg {
+  transform: none;
 }
 
 .accordion-list .accordion-list__heading {
@@ -218,14 +225,19 @@
   fill: var(--verysoftviolet);
 }
 
+.accordion-selector__btn:focus:not(:active) {
+  color: var(--white);
+  outline: none;
+  background-color: var(--moderateviolet);
+}
+
 .accordion-selector__btn:hover {
   color: var(--moderateviolet);
   border-bottom: 1px solid var(--moderateviolet);
 }
-
-.accordion-selector__btn:focus {
-  color: var(--white);
-  background-color: var(--moderateviolet);
+.accordion-selector__btn:active {
+  color: var(--moderateviolet);
+  border-bottom: 1px solid transparent;
 }
 
 @media (max-width: 1200px) {
@@ -322,11 +334,11 @@
 @media (max-width: 560px) {
 
   .section-catalog {
-    padding: 50px 0 50px;
+    padding: 52px 0 50px;
   }
 
   .section-catalog__heading {
-    margin-bottom: 12.5px;
+    margin-bottom: 10.5px;
   }
 
   .section-catalog__discription {
@@ -361,7 +373,7 @@
   }
 
   .tabs-content__picture {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
 
   .tabs-content__heading {
@@ -369,7 +381,7 @@
   }
 
   .tabs-content__years-of-life {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
 }

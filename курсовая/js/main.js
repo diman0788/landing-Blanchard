@@ -79,6 +79,7 @@ document.querySelectorAll('.header-bottom-lift__btn').forEach(e => {
 
 // gallery
 
+
 const galSwiper = new Swiper('.gallery-right-swiper-container', {
     pagination: {
         el: '.gallery-right-swiper-button__pagination',
@@ -99,31 +100,31 @@ const galSwiper = new Swiper('.gallery-right-swiper-container', {
     initialSlide: 1,
 
     breakpoints: {
-        480: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 14
-        },
-        750: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 34
-        },
-        769: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            spaceBetween: 34
-        },
-        1050: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 34
-        },
-        1480: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            spaceBetween: 50
-        }
+      480: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 14,
+      },
+      750: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 34
+      },
+      769: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 32
+      },
+      1050: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 34
+      },
+      1480: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 50
+      },
     },
 });
 
@@ -135,6 +136,12 @@ const mySelekt = () => {
         position: 'bottom',
         searchEnabled: false,
         itemSelectText: ' ',
+    });
+    document.querySelector('.choices__inner').addEventListener('click', function () {
+      document.querySelector('.choices__inner').classList.toggle('choices__inner-active');
+    });
+    document.querySelector('.choices__item--selectable').addEventListener('click', function () {
+      document.querySelector('.choices__inner').classList.toggle('choices__inner-active');
     });
 };
 
@@ -343,8 +350,8 @@ const eventSwiper = new Swiper('.section-events-swiper-container', {
 
   breakpoints: {
           480: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
             spaceBetween: 14
           },
           560: {
@@ -357,7 +364,7 @@ const eventSwiper = new Swiper('.section-events-swiper-container', {
               slidesPerGroup: 3,
               spaceBetween: 34,
           },
-          1014: {
+          1000: {
               slidesPerView: 3,
               slidesPerGroup: 3,
               spaceBetween: 24,
@@ -387,8 +394,8 @@ const projectsSwiper = new Swiper('.projects-bottom__partners', {
 
   breakpoints: {
           480: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
             spaceBetween: 14,
           },
           750: {

@@ -76,29 +76,27 @@
   color: var(--moderateviolet);
   background-color: transparent;
   cursor: pointer;
-  transition-property: transform, color, border, outline, background-color;
+  transition-property: color, border, outline, background-color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+}
+
+.contacts-form__btn:focus {
+  color: var(--moderateviolet);
+  outline: 1px solid var(--softviolet);
+  outline-offset: 2px;
 }
 
 .contacts-form__btn:hover {
   color: var(--white);
   background-color: var(--moderateviolet);
   border: 1px solid var(--verysoftviolet);
-  transform: scale(1.02);
-}
-
-.contacts-form__btn:focus {
-  color: var(--white);
-  border: 2px solid var(--white);
-  outline: 1px solid var(--softviolet);
 }
 
 .contacts-form__btn:active {
   color: var(--white);
   background-color: var(--darkmoderateviolet);
   border: 1px solid var(--verysoftviolet);
-  transform: scale(.95);
 }
 
 .contacts-social__heading {
@@ -206,7 +204,7 @@
 
   .section-contacts__container {
     padding-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   .contacts-discription__heading {
@@ -224,7 +222,7 @@
   }
 
   .section-contacts__form {
-    margin-bottom: 23px;
+    margin-bottom: 21.5px;
   }
 
   .contacts-form__input {
@@ -283,8 +281,13 @@
     height: 50px;
   }
 
+  .section-contacts__maps {
+    min-height: 320px;
+    height: 200px;
+  }
+
   .maps {
-    min-height: 315px;
+    height: 115px;
   }
 
 }

@@ -4,30 +4,34 @@
 
 @font-face {
   font-family: 'Open-Sans';
-  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_bold-webfont.woff2') format('woff2'), url('../fonts/open_sans_bold-webfont.woff') format('woff');
+  src: url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff');
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Open-Sans';
-  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_regilar-webfont.woff2') format('woff2'), url('../fonts/open_sans_regilar-webfont.woff') format('woff');
+  src: url('../fonts/OpenSans.woff2') format('woff2'), url('../fonts/OpenSans.woff') format('woff');
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Open-Sans';
-  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_semibold-webfont.woff2') format('woff2'), url('../fonts/open_sans_semibold-webfont.woff') format('woff');
+  src: url('../fonts/OpenSans-Semibold.woff2') format('woff2'), url('../fonts/OpenSans-Semibold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Open-Sans';
-  src: local('Open-Sans'), local('Open-Sans'), url('../fonts/open_sans_italic-webfont.woff2') format('woff2'), url('../fonts/open_sans_italic-webfont.woff') format('woff');
+  src: url('../fonts/OpenSans-Italic.woff2') format('woff2'), url('../fonts/OpenSans-Italic.woff') format('woff');
   font-style: italic;
   font-weight: normal;
+  font-display: swap;
 }
 
 :root {
@@ -50,8 +54,8 @@
   --softviolet--rgb: 194, 131, 243;
 }
 
-html {
-  font-family: 'Open-Sans', sans-serif;
+body {
+  font-family: 'Open-Sans', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -75,7 +79,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -90,6 +94,7 @@ button {
 
 .container {
   max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 160px;
   padding-right: 160px;
@@ -116,7 +121,24 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+
 @media (max-width: 560px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
 
   .heading {
     font-size: 28px;

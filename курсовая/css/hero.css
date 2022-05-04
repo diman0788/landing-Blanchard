@@ -6,6 +6,8 @@
 
 .section-hero__container {
   position: relative;
+  top: 12px;
+  left: 1px;
   z-index: 10;
   width: 100%;
 }
@@ -20,7 +22,7 @@
 }
 
 .section-hero__discription {
-  max-width: 45%;
+  max-width: 35%;
   margin-bottom: 92px;
   font-size: 18px;
   line-height: 30px;
@@ -33,25 +35,24 @@ display: inline-block;
 max-width: 314px;
 width: 100%;
 background-color: var(--moderateviolet);
-transition-property: transform, border, outline, background-color;
+border: 2px solid transparent;
+transition-property: border, outline, background-color;
 transition-duration: .3s;
 transition-timing-function: ease-in-out;
 }
 
-.section-hero__btn:hover {
-  border: 1px solid var(--verysoftviolet);
-  transform: scale(1.05);
+.section-hero__btn:focus:not(:active) {
+  outline: 1px solid var(--softviolet);
+  outline-offset: 2px;
 }
 
-.section-hero__btn:focus {
-  border: 2px solid var(--white);
-  outline: 1px solid var(--softviolet);
+.section-hero__btn:hover {
+  border: 2px solid var(--verysoftviolet);
 }
 
 .section-hero__btn:active {
   background-color: var(--darkmoderateviolet);
-  border: 1px solid var(--verysoftviolet);
-  transform: scale(.9);
+  border: 2px solid var(--verysoftviolet);
 }
 
 #crossfade {
@@ -117,12 +118,18 @@ transition-timing-function: ease-in-out;
 @media (max-width: 1200px) {
 
   #crossfade {
+    max-width: 100%;
     min-height: 667px;
   }
 
   .section-hero__container  {
     left: 0;
-    padding: 117px 50px;
+    top: 0;
+    padding: 110px 50px;
+  }
+
+  #crossfade span {
+    max-width: 100%;
   }
 
   .section-hero__icon1 {
@@ -146,7 +153,7 @@ transition-timing-function: ease-in-out;
 
   .section-hero__discription {
     max-width: 76%;
-    margin-bottom: 130px;
+    margin-bottom: 131px;
   }
 }
 
@@ -184,6 +191,7 @@ transition-timing-function: ease-in-out;
   }
 
   .section-hero__container {
+    top: -7px;
     padding: 30px 30px;
   }
 

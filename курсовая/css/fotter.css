@@ -66,12 +66,12 @@
 @media (max-width: 560px) {
 
   .footer {
-    height: 135px;
+    height: 130px;
   }
 
   .footer-container {
     flex-direction: column-reverse;
-    padding-top: 22px;
+    padding-top: 26px;
     padding-bottom: 16px;
     height: 132px;
   }

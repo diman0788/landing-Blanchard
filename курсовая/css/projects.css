@@ -40,23 +40,22 @@
   display: inline-block;
   font-weight: 600;
   color: var(--moderateviolet);
-  transition-property: transform, color, text-decoration, background-color;
+  transition-property: color, text-decoration, background-color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
 }
 
+.projects-discription__link:focus:not(:active) {
+  color: var(--white);
+  background-color: var(--moderateviolet);
+}
+
 .projects-discription__link:hover {
-  transform: scaleX(1.05);
   text-decoration: underline;
 }
 
 .projects-discription__link:active {
   color: var(--darkmoderateviolet);
-}
-
-.projects-discription__link:focus {
-  color: var(--white);
-  background-color: var(--moderateviolet);
 }
 
 .section-projects__titel {
@@ -121,6 +120,12 @@
 .projects-bottom__prev:focus svg .path,
 .projects-bottom__next:focus svg .path {
   stroke: var(--darkmoderateviolet);
+}
+
+.projects-bottom__prev.swiper-button-disabled svg path,
+.projects-bottom__next.swiper-button-disabled svg path {
+  opacity: .65;
+  ;
 }
 
 .projects-partners__icon {
@@ -311,7 +316,7 @@
 @media (max-width: 560px) {
 
   .section-projects {
-    padding-top: 35px;
+    padding-top: 31px;
     padding-bottom: 25px;
   }
 
