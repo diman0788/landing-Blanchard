@@ -15,25 +15,3 @@
     color: #333333;
     font-weight: 400;
 }
-
-@media (max-width: 1200px) {
-
-  .section-aboutUs__discription {
-    max-width: 92%;
-  }
-}
-
-@media (max-width: 560px) {
-
-  .section-aboutUs {
-    padding: 52px 0 36px;
-  }
-
-  .section-aboutUs__discription {
-    max-width: 90%;
-    font-size: 14px;
-    line-height: 28px;
-
-  }
-
-}
