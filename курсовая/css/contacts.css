@@ -11,7 +11,9 @@
 }
 
 .section-contacts__discription {
-  max-width: 247px;
+  max-width: 267px;
+  width: 100%;
+  margin-top: -3px;
 }
 
 .contacts-discription__heading {
@@ -32,7 +34,7 @@
 .section-contacts__form {
   display: flex;
   justify-content: space-between;
-  max-width: 905px;
+  max-width: 915px;
   width: 100%;
 }
 
@@ -52,11 +54,14 @@
 }
 
 .contacts-form__group {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .js-validate-error-label {
+  position: absolute;
+  top: -20px;
   padding-left: 30px;
   order: -1;
   }
@@ -66,7 +71,7 @@
 }
 
 .contacts-form__btn {
-  max-width: 320px;
+  max-width: 325px;
   width: 100%;
   height: 50px;
   padding: 12.5px 35px;
@@ -108,24 +113,41 @@
 }
 
 .contacts-social__link {
-  transition-property: border-radius, border, opacity;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out;
+  position: relative;
+  transition: opacity .3s ease-in-out;
+}
+
+.contacts-social__link svg {
+  width: 40px;
+  height: 40px;
+}
+
+.contacts-social__link::before {
+  content: "";
+  position: absolute;
+  top: -27px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #9643A4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
 }
 
 .contacts-social__link:not(:last-child) {
-  margin-left: -3px;
+  margin-left: 15px;
   margin-right: 16px;
 }
 
 .contacts-social__link:hover,
-.contacts-social__link:focus {
+.contacts-social__link:focus{
  opacity: .6;
 }
 
-.contacts-social__link:active svg {
-  border-radius: 50%;
-  border:  2px solid var(--black);
+.contacts-social__link:active::before {
   opacity: 1;
 }
 

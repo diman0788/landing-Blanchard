@@ -8,39 +8,74 @@
 }
 
 .section-events__heading {
-  margin-bottom: 12px;
+  margin-bottom: 17px;
+}
+
+.section-events__button-next,
+.section-events__button-prev {
+  position: absolute;
+  top: 52%;
+  z-index: 100;
+  outline: none;
+  cursor: pointer;
 }
 
 .section-events__button-next {
-  position: absolute;
-  top: 52%;
   right: 135px;
-  z-index: 100;
-  outline: none;
 }
 
-.section-events__button-next svg .path {
-  transition-property: stroke;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out;
+.section-events__button-prev svg {
+  transform: rotate(180deg);
 }
 
-.section-events__button-next svg path {
-  transition-property: fill;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out;
+.section-events__button-prev {
+  left: 135px;
 }
 
-.section-events__button-next:focus svg .path {
-  stroke: var(--moderateviolet);
+.section-events__button-next::after,
+.section-events__button-prev::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+  width: 44px;
+  border: 3px solid var(--moderateviolet);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
 }
 
-.section-events__button-next:hover svg path {
+.section-events__button-next svg .path,
+.section-events__button-prev svg .path {
+  transition: fill .3s ease-in-out, stroke .3s ease-in-out;
+}
+
+.section-events__button-next svg path,
+.section-events__button-prev svg path {
+  transition: fill .3s ease-in-out;
+}
+
+.section-events__button-next:focus::after,
+.section-events__button-prev:focus::after {
+  opacity: 1;
+}
+
+.section-events__button-next:hover svg path,
+.section-events__button-prev:hover svg path {
   fill: var(--verysoftviolet);
 }
 
-.section-events__button-next:active svg .path {
-  stroke: var(--moderateviolet);
+.section-events__button-next:active::after,
+.section-events__button-prev:active::after {
+  opacity: 1;
+}
+
+.section-events__button-next.swiper-button-disabled,
+.section-events__button-prev.swiper-button-disabled {
+  display: none;
 }
 
 .section-events__pagination {

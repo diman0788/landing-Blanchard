@@ -6,15 +6,15 @@
 
 .section-hero__container {
   position: relative;
-  top: 12px;
-  left: 1px;
   z-index: 10;
   width: 100%;
+  padding-top: 142px;
+  padding-bottom: 122px;
 }
 
 .section-hero__heading {
   max-width: 40%;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   font-size: 72px;
   line-height: 82.8px;
   font-weight: 700;
@@ -58,7 +58,6 @@ transition-timing-function: ease-in-out;
 #crossfade {
   position: relative;
   display: flex;
-  align-items: center;
   min-height: 700px;
   margin: 0 auto;
   background-image: url('../img/hero/hero-icon1x1920.png');

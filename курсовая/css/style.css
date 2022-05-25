@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 @font-face {
@@ -119,30 +120,4 @@ button {
   border: 1px solid var(--moderateviolet);
   border-radius: 100px;
   cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 100%;
-    padding: 0 50px;
-  }
-}
-
-@media (max-width: 900px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media (max-width: 560px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-
-  .heading {
-    font-size: 28px;
-    line-height: 38.13px;
-  }
-
 }

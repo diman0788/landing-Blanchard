@@ -105,7 +105,7 @@ const galSwiper = new Swiper('.gallery-right-swiper-container', {
         slidesPerGroup: 1,
         spaceBetween: 14,
       },
-      750: {
+      650: {
         slidesPerView: 2,
         slidesPerGroup: 2,
         spaceBetween: 34
@@ -121,10 +121,15 @@ const galSwiper = new Swiper('.gallery-right-swiper-container', {
           spaceBetween: 34
       },
       1480: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           slidesPerGroup: 3,
-          spaceBetween: 50
+          spaceBetween: 30
       },
+      1780: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50
+    },
     },
 });
 
@@ -339,9 +344,9 @@ const eventSwiper = new Swiper('.section-events-swiper-container', {
   },
   navigation: {
       nextEl: '.section-events__button-next',
+      prevEl: '.section-events__button-prev',
       },
 
-      loop: true,
       slidesPerView: 1,
       watchOverflow: false,
       slidesPerGroup: 1,
@@ -404,8 +409,8 @@ const projectsSwiper = new Swiper('.projects-bottom__partners', {
               spaceBetween: 34,
           },
           769: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
+              slidesPerView: 2,
+              slidesPerGroup: 2,
               spaceBetween: 34,
           },
           1014: {
@@ -415,9 +420,9 @@ const projectsSwiper = new Swiper('.projects-bottom__partners', {
           },
           1480: {
               slidesPerView: 3,
-              slidesPerGroup: 1,
+              slidesPerGroup: 3,
               spaceBetween: 50,
-          }
+          },
   },
 });
 
@@ -492,9 +497,9 @@ document.querySelectorAll('.accordion-selector__btn').forEach(function(tabsBtn) 
    const path = event.currentTarget.dataset.path_catalog
 
     document.querySelectorAll('.accordion-selector__btn').forEach(function(tabsList) {
-      tabsList.classList.remove('tabs-active')
+      tabsList.classList.remove('active')
     })
-    document.querySelector(`[data-path_catalog="${path}"]`).classList.add('tabs-active')
+    document.querySelector(`[data-path_catalog="${path}"]`).classList.add('active')
   })
 })
 

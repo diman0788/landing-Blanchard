@@ -148,7 +148,7 @@
 
 .ui-accordion .ui-accordion-header {
   position: static;
-  padding: 28.9px 0 28.8px;
+  padding: 32px 0 25px;
   margin: 0;
 }
 
@@ -238,4 +238,8 @@
 .accordion-selector__btn:active {
   color: var(--moderateviolet);
   border-bottom: 1px solid transparent;
+}
+
+.active {
+  color: var(--moderateviolet);
 }

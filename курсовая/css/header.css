@@ -97,11 +97,15 @@
 }
 
 .header-center__nav {
+  max-width: 1275px;
+  width: 100%;
+  margin-top: -3px;
+}
+
+.header-nav__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1275px;
-  width: 100%;
 }
 
 .header-center__logo {
@@ -271,13 +275,23 @@
   width: 220px;
   font-size: 18px;
   line-height: 24.51px;
-  color: var(--white);
+  color: rgba(var(--white--rgb), .85);
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid rgba(var(--white--rgb), .85);
   transition-property: border-bottom-color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(var(--white--rgb), .85);
+}
+::-moz-placeholder {
+  color: rgba(var(--white--rgb), .85);
+}
+::-moz-placeholder {
+  color: rgba(var(--white--rgb), .85);
 }
 
 .header-form__input:focus,
@@ -535,13 +549,19 @@
 }
 
 .simplebar-track.simplebar-vertical {
+  top: -40px;
+  right: -40px;
+  width: 2px;
+  height: 210px;
   margin-top: 40px;
   margin-bottom: 40px;
   margin-right: 19px;
   padding-left: 1px;
-  width: 2px;
   background: var(--black);
   z-index: 1
 }
 
-
+.dropdown-menu {
+  width: 220px;
+  height: 210px;
+}

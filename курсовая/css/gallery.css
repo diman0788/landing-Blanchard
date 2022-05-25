@@ -4,6 +4,7 @@
   min-height: 495px;
   margin: 0 auto;
   padding: 82px 0 73px;
+  padding-bottom: 75px;
   background-image: url('../img//gallery/galeri-icon-1920.png');
   background-size: cover;
 }
@@ -12,6 +13,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.gallery-left {
+  width: 27%;
+  margin-right: 10px;
 }
 
 .gallery-left__heading {
@@ -59,26 +65,29 @@
   font-weight: 600;
   color: var(--white);
   cursor: pointer;
+}
+
+.checke ~ .span-text {
   transition: color .3s ease-in-out;
 }
 
-.left-checkbox__check span {
+.checke ~ .span {
   transition: border .3s ease-in-out;
 }
 
-.left-checkbox__check:focus {
+.checke:focus ~ .span-text{
   color: var(--softviolet);
 }
 
-.left-checkbox__check:hover {
+.checke:hover ~ .span-text {
   color: var(--softviolet);
 }
 
-.left-checkbox__check:focus .span {
+.checke:focus ~ .span {
   border: 1px solid var(--softviolet);
 }
 
-.left-checkbox__check:hover .span {
+.checke:hover ~ .span {
   border: 1px solid var(--softviolet);
 }
 
@@ -100,18 +109,18 @@
   border: 1px solid var(--white);
 }
 
-.checke:checked + span {
+.checke:checked + .span {
   border: 1px solid var(--softviolet);
 }
 
-.checke:checked ~ span  {
+.checke:checked ~ .span-text  {
   color: var(--softviolet);
 }
 
-.checke + span::before {
+.checke + .span::before {
   content: url('../img/gallery/chekbox.svg');
   position: absolute;
-  top: -13px;
+  top: -14px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -119,7 +128,7 @@
   transition: opaciti .4s ease-in-out;
 }
 
-.checke:checked + span::before {
+.checke:checked + .span::before {
   opacity: 1;
 }
 
@@ -226,7 +235,10 @@
 }
 
 .gallery-right {
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 72.1%;
+  height: auto;
   margin-top: 23px;
 }
 
@@ -390,6 +402,7 @@
   display: flex;
   justify-content: space-between;
   width: 133px;
+  margin-left: 5px;
 }
 
 .gallery-right-swiper-button__prev::after,
@@ -445,6 +458,7 @@
 .gallery-right-swiper-button__prev.swiper-button-disabled svg path,
 .gallery-right-swiper-button__next.swiper-button-disabled svg path {
   fill: #999;
+  pointer-events: none;
 }
 
 .gallery-right-swiper-button__pagination {
@@ -460,28 +474,50 @@
   overflow: hidden;
 }
 
-@media (hover:hover) and (pointer:fine) {
-  .gallery-swiper-slide__picture:hover:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 25px;
-    background: url(../img/gallery/gallery-focus-plus.png) center/79px no-repeat, url(../img/gallery/galery-focus-fon.png) center/300px no-repeat;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    cursor: pointer
-  }
+.gallery-swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+.gallery-swiper-slide::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 25px;
+  background-image: url('../img/gallery/galery-focus-fon.png');
+  background-position:  center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+  opacity: 0;
 }
 
 .gallery-swiper-slide:focus {
   outline: 3px solid var(--darkmoderateviolet)
 }
 
+.gallery-swiper-slide:hover:after {
+  opacity: 1;
+}
+
+.gallery-swiper-slide:active::before {
+  opacity: 1;
+}
+
 .gallery-info__login:focus {
-  transition: 0.5s ease-in-out;
+  transition: .5s ease-in-out;
   outline: 2px solid var(--darkmoderateviolet);
 }
