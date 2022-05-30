@@ -50,11 +50,6 @@
 
 .section-events__button-next svg .path,
 .section-events__button-prev svg .path {
-  transition: fill .3s ease-in-out, stroke .3s ease-in-out;
-}
-
-.section-events__button-next svg path,
-.section-events__button-prev svg path {
   transition: fill .3s ease-in-out;
 }
 
@@ -120,7 +115,6 @@
   margin-bottom: 10px;
   font-size: 24px;
   line-height: 32.68px;
-  font-weight: 600;
   color: var(--gray20);
 }
 

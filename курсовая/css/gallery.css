@@ -62,7 +62,6 @@
   padding-left: 24px;
   font-size: 16px;
   line-height: 2;
-  font-weight: 600;
   color: var(--white);
   cursor: pointer;
 }
@@ -455,9 +454,9 @@
   fill: var(--darkmoderateviolet);
 }
 
-.gallery-right-swiper-button__prev.swiper-button-disabled svg path,
-.gallery-right-swiper-button__next.swiper-button-disabled svg path {
-  fill: #999;
+.gallery-right-swiper-button__prev.swiper-button-disabled,
+.gallery-right-swiper-button__next.swiper-button-disabled {
+  opacity: .5;
   pointer-events: none;
 }
 

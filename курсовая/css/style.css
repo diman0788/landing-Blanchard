@@ -109,6 +109,10 @@ button {
   font-weight: 400;
 }
 
+.titel {
+  font-weight: 700;
+}
+
 .btn {
   max-width: 314px;
   height: 70px;

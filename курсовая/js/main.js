@@ -366,7 +366,7 @@ const eventSwiper = new Swiper('.section-events-swiper-container', {
           },
           869: {
               slidesPerView: 2,
-              slidesPerGroup: 3,
+              slidesPerGroup: 2,
               spaceBetween: 34,
           },
           1000: {

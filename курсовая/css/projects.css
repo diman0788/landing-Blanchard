@@ -7,7 +7,7 @@
 }
 
 .section-projects__discription {
-  max-width: 1040px;
+  max-width: 1070px;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 2;
@@ -81,7 +81,6 @@
   font-size: 24px;
   line-height: 32px;
   color: var(--gray20);
-  font-weight: 600;
 }
 
 .projects-proects__bottom {
@@ -121,28 +120,26 @@
   cursor: pointer;
 }
 
-.projects-bottom__prev svg path,
-.projects-bottom__next svg path {
-  transition: fill .3s ease-in-out;
-}
-
-.projects-bottom__prev svg .path,
-.projects-bottom__next svg .path,
 .projects-bottom__prev svg .path,
 .projects-bottom__next svg .path {
+  transition: fill .3s ease-in-out, stroke .3s ease-in-out;
+}
+
+.projects-bottom__prev svg path,
+.projects-bottom__next svg path {
   transition: stroke .3s ease-in-out;
 }
 
-.projects-bottom__prev:hover svg path,
-.projects-bottom__next:hover svg path {
-  fill: var(--verysoftviolet);
+.projects-bottom__prev:focus svg .path,
+.projects-bottom__next:focus svg .path,
+.projects-bottom__prev:active svg .path,
+.projects-bottom__next:active svg .path {
+  stroke: var(--darkmoderateviolet);
 }
 
-.projects-bottom__prev:active svg .path,
-.projects-bottom__next:active svg .path,
-.projects-bottom__prev:focus svg .path,
-.projects-bottom__next:focus svg .path {
-  stroke: var(--darkmoderateviolet);
+.projects-bottom__prev:hover svg .path,
+.projects-bottom__next:hover svg .path {
+  fill: var(--verysoftviolet);
 }
 
 .projects-bottom__prev.swiper-button-disabled svg path,
