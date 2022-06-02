@@ -55,8 +55,7 @@
   /* contacts */
 
   .contacts-form__btn {
-    max-width: 343px;
-    padding: 12px 30px;
+    padding: 12px 55px;
     font-size: 16px;
   }
 }
@@ -250,7 +249,7 @@
   .section-hero__discription {
     max-width: 76%;
     margin-bottom: 135px;
-    font-size: 18.7px;
+    font-size: 18px;
   }
 
   /* about-us */
@@ -504,10 +503,6 @@
   .section-contacts__form {
     max-width: 100%;
     margin-bottom: 27px;
-  }
-
-  .contacts-form__btn {
-    max-width: 343px;
   }
 
   .contacts-social__link:not(:last-child) {
@@ -800,7 +795,7 @@
 
   .section-contacts__form {
     flex-wrap: wrap;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   .contacts-form__input {
@@ -811,9 +806,9 @@
 
   .contacts-form__btn {
     max-width: 318px;
-    margin-top: 13px;
-    padding: 12px 20px;
-    font-size: 19px;
+    margin-top: 14px;
+    padding: 12px 27px;
+    font-size: 18px;
   }
 
   .section-contacts__maps {
@@ -1321,7 +1316,7 @@
   .contacts-form__btn2 {
     display: block;
     height: 40px;
-    padding: 12px 35px;
+    padding: 12px 34px;
     font-size: 12px;
     line-height: 16.34px;
     font-weight: 700;

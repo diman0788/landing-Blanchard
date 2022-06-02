@@ -15,7 +15,7 @@
 .section-hero__heading {
   max-width: 40%;
   margin-bottom: 18px;
-  font-size: 75px;
+  font-size: 72px;
   line-height: 82.8px;
   font-weight: 700;
   color: #ffffff;
@@ -31,14 +31,12 @@
 }
 
 .section-hero__btn {
-display: inline-block;
-max-width: 314px;
-width: 100%;
-background-color: var(--moderateviolet);
-border: 2px solid transparent;
-transition-property: border, outline, background-color;
-transition-duration: .3s;
-transition-timing-function: ease-in-out;
+  display: inline-block;
+  background-color: var(--moderateviolet);
+  border: 2px solid transparent;
+  transition-property: border, outline, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .section-hero__btn:focus:not(:active) {

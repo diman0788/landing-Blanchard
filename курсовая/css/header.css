@@ -327,6 +327,7 @@
 }
 
 .dropdaun__btn {
+  display: block;
   width: 220px;
   height: 40px;
   padding: 9px 0 12px 14px;
@@ -338,6 +339,10 @@
   transition-property: border, background-image;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+}
+
+.height {
+  height: 40px;
 }
 
 .dropdaun__btn:not(:last-child) {

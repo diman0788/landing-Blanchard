@@ -7,7 +7,7 @@
   font-family: 'Open-Sans';
   src: url('../fonts/OpenSansBold.woff2') format('woff2'), url('../fonts/OpenSansBold.woff') format('woff');
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -23,7 +23,7 @@
   font-family: 'Open-Sans';
   src: url('../fonts/OpenSansSemiBold.woff2') format('woff2'), url('../fonts/OpenSansSemiBold.woff') format('woff');
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-display: swap;
 }
 
@@ -110,11 +110,10 @@ button {
 }
 
 .titel {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .btn {
-  max-width: 314px;
   height: 70px;
   padding: 22px 35px;
   font-size: 18px;
