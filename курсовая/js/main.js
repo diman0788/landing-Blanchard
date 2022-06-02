@@ -1,3 +1,30 @@
+// scrollbar
+
+new SimpleBar(document.getElementById('scrollbar1'), {
+  autoHide: false,
+  scrollbarMaxSize: 28,
+});
+
+new SimpleBar(document.getElementById('scrollbar2'), {
+  autoHide: false,
+  scrollbarMaxSize: 28,
+});
+
+new SimpleBar(document.getElementById('scrollbar3'), {
+  autoHide: false,
+  scrollbarMaxSize: 28,
+});
+
+new SimpleBar(document.getElementById('scrollbar4'), {
+  autoHide: false,
+  scrollbarMaxSize: 28,
+});
+
+new SimpleBar(document.getElementById('scrollbar5'), {
+  autoHide: false,
+  scrollbarMaxSize: 28,
+});
+
 // поиск
 
 document.querySelector('#serch').addEventListener('click', function () {
