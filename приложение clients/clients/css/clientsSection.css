@@ -1,0 +1,166 @@
+.clients {
+    padding-top: 115px;
+}
+
+.clients__wraper {
+    position: relative;
+}
+
+.clients__heading {
+    margin: 0;
+    margin-bottom: 26px;
+    font-size: 24px;
+    line-height: 32.68px;
+    font-weight: 700;
+}
+
+.clients__container {
+    display: flex;
+    flex-direction: column ;
+}
+
+.display-info {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.display__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.display-info__item {
+    font-size: 12px;
+    line-height: 16.34px;
+    font-weight: 400;
+    color: var(--color-silver-chalice);
+}
+
+.display-info__item--id,
+.display-info__sorting {
+    text-transform: uppercase;
+    color: var(--color-heliotrope);
+}
+
+.display-info__item--id,
+.display-info__item--name,
+.display-info__item--create,
+.display-info__item--change {
+    cursor: pointer;
+    user-select: none;
+}
+
+.display-info__item--id {
+    margin-right: 59px;
+    padding-right: 10px;
+    background-position: right center;
+}
+
+.display-info__item--name {
+    padding-left: 59px;
+    background-position: right 20px center;
+}
+
+.display-info__sorting {
+    padding-left: 12px;
+    font-size: 10px;
+}
+
+.display-info__item--create {
+    position: relative;
+    padding-left: 200px;
+    padding-right: 70px;
+}
+
+.display-info__item--create::before {
+    content: 'создания';
+    position: absolute;
+    top: 1px;
+    right: 0;
+    margin-right: 13px;
+}
+
+.display-info__item--change {
+    position: relative;
+    margin-right: 28px;
+    padding-left: 30px;
+    padding-right: 80px;
+}
+
+.display-info__item--change::before {
+    content: 'изменения';
+    position: absolute;
+    top: 1px;
+    right: 0;
+    margin-right: 13px;
+}
+
+.display-info__item--contacts {
+    padding-left: 30px;
+}
+
+.display-info__item--action {
+    text-align: start;
+    padding-left: 90px;
+}
+
+.clients__btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 12.5px 26.5px;
+    align-self: center;
+    border: 1px solid var(--color-heliotrope);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-heliotrope);
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.clients__btn svg {
+    display: block;
+    margin-right: 10px;
+    fill: var(--color-heliotrope);
+    transition: fill .3s ease-in-out;
+}
+
+.clients__btn:hover {
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    color: var(--color-white);
+    background-color: var(--color-heliotrope);
+}
+
+.clients__btn:hover svg {
+    fill: var(--color-white);
+}
+
+.create__span,
+.edite__span {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background-image: url('../img/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sort-up,
+.sort-down {
+    background-repeat: no-repeat;
+}
+
+.sort-up {
+    background-image: url('../img/arrow-up.svg');
+}
+
+.sort-down {
+    background-image: url('../img/arrow-down.svg');
+}
+
+.display-info__item--create,
+.display-info__item--change {
+    background-image: none;
+}

@@ -1,0 +1,48 @@
+.delete-modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-modal__titel {
+    margin: 0;
+    margin-bottom: 11px;
+    font-size: 18px;
+    color: var(--color-black3);
+    text-align: center;
+}
+
+.delete-modal__text {
+    max-width: 275px;
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-black3);
+    text-align: center;
+}
+
+.delete-modal__delete, 
+.delete-modal__back {
+    display: block;
+}
+
+.delete-modal__delete {
+    position: relative;
+    align-self: center;
+    padding: 13px 35px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.delete-modal__back {
+    font-size: 12px;
+    font-weight: 400;
+    align-self: center;
+    color: var(--color-black3);
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--color-black3);
+}
